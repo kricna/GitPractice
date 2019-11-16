@@ -1,0 +1,52 @@
+1) If We Add Collaborators Then They Will Be Able To Add In Our GitHub Repo Without Any Issue.
+2) If We Want To Contribute Any Others Project Then Fork It And Create pull request
+	after making changes.
+3) git restore --staged <file> : To Unstage Changes
+4) git restore <file>..." - To discard changes in working directory
+5) git reset HEAD <file> - To unstage a File. Keeps The Changes.
+6) git fetch followed by git merge origin/master.
+   If you don't want to merge. You can use e.g. git reset --hard HEAD@{1} to go back and discard result of git pull.
+7) git config --global credential.github.com.useHttpPath true
+8) git credential-manager uninstall : Then It Was Ask For Password Everytime.
+9) git reset --hard HEAD~1 : To Reset Last 1 Commit.
+-----------------------------------------------------------------------------
+git checkout fileName :: revert back the changes in a file
+git reset HEAD fileName :: revert back to original from git add
+git revert HEAD --no-edit :: revert back from commit : DELETES THE FILES COMPLETELY
+git commit --amend -m "amend message" :: Amending Commit Msg
+mv hello.rb lib :: Moving file to another dir - mkdir lib
+git checkout -b <branchname> :: Create a branch & switch - is a shortcut for git
+branch <branchname> followed by a git checkout <branchname>
+
+git reset HEAD <file> :: Remove File From Staging Or, Simple git reset
+git checkout -- <file> :: Revert Back File Changes
+
+git diff [fileName] :: To Check The Difference In Changes.
+git reset [fileName] :: To Revert Back Changes.
+git revert [hashcode] :: Commit the old command
+git reset --hard [hashcode] :: Go Back To Some Command
+git rm -f [fileName] :: To Delete A File
+git merge [branch name]
+git merge [source branch] [target branch]
+git branch -a :: List All Branch
+git branch -d [branch name] :: delete a branch
+git checkout [branch name] :: switch to branch
+git push :: push to remote in same branch
+git push origin master :: push to master branch
+git push origin --delete [branch name] :: delete remote branch
+git log :: view changes
+git log --summary :: view changes
+git diff [source branch] [target branch] :: view changes before merge
+git diff [fileName] :: changes in file
+
+Commit Without Message?
+Click 'i' To Insert.
+Then Enter Your Text Messages 'Commit Message'
+Then ESC Key
+Then :wq!
+
+Git Tags :
+https://www.youtube.com/watch?v=govmXpDGLpo&list=PLhW3qG5bs-L8OlICbNX9u4MZ3rAt5c5GG&index=7
+
+Merge Vs Rebase :
+https://www.youtube.com/watch?v=KWAZl2QHC44&list=PLhW3qG5bs-L8OlICbNX9u4MZ3rAt5c5GG&index=11&t=0s
