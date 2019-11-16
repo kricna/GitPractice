@@ -8,8 +8,13 @@
    If you don't want to merge. You can use e.g. git reset --hard HEAD@{1} to go back and discard result of git pull.
 7) git config --global credential.github.com.useHttpPath true
 8) git credential-manager uninstall : Then It Was Ask For Password Everytime.
-9) git reset --hard HEAD~1 : To Reset Last 1 Commit. Also Reset The Current File Changes!.
-10) git reset --soft HEAD~1 : To Reset Last 1 Commit. By Keep The Current File Changes!.
+9) git reset --hard HEAD~1 : To Reset Last 1 Commit.
+10) git push -f origin master : Force Push
+11) git log :: view changes
+12) git log --summary :: view changes
+13) git reflog
+14) git checkout <branch> : You are in 'detached HEAD' state.
+15) git commit --amend -m "amend message" :: Amending Commit Msg
 -----------------------------------------------------------------------------
 git checkout fileName :: revert back the changes in a file
 git reset HEAD fileName :: revert back to original from git add
