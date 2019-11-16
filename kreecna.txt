@@ -4,4 +4,4 @@ Hi...
 Hello
 World By kreecna
 Now, Let's See Merge!.
-fgfg
+Now Revert Commit Also Learnt.
